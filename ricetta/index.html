@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricetta</title>
+</head>
+<!-- Lo <style> è necessario perché appaiano i bordi della tabella -->
+<!-- Il padding ha funzione solamente estetica -->
+<style>
+    table, td {
+        border: solid black 2px ;
+        border-collapse: collapse;
+
+        padding: 5px;
+    }
+</style>
+<body>
+    <h1>Torta di mele</h1>
+    <img src="pie.jpg" alt="Torta alle mele" width="50%">
+    <hr>
+    <table>
+        <tr>
+            <td>Difficoltà</td>
+            <td>Facile</td>
+        </tr>
+        <tr>
+            <td>Costo</td>
+            <td>Circa €20</td>
+        </tr>
+        <tr>
+            <td>Tempo di realizzazione</td>
+            <td>Circa 2 ore</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Ingredienti</h2>
+    <ul>
+        <li>300g di farina 00</li>
+        <li>65g di zucchero</li>
+        <li>un pizzico di sale</li>
+        <li>160g di burro</li>
+        <li>4 cucchiai di acqua fredda</li>
+        <li>1.5Kg di mele</li>
+        <li>1 cucchiaio di cannella</li>
+        <li>20g di farina di mandorle</li>
+        <li>1 tuorlo d'uovo</li>
+    </ul>
+    <br>
+    <hr>
+    <h2>Istruzioni</h2>
+    <p>
+        Preparate la pasta brisée: versate nel robot, munito di lama, la farina, lo zucchero, il sale e il burro freddo tagliato a pezzi. Frullate fino ad ottenere un composto omogeneo, poi aggiungete un cucchiaio di acqua alla volta finché non si formerà una palla: avvolgetela nella pellicola alimentare e conservatela in frigo per un paio d’ore.
+        Nel frattempo, sbucciate le mele, eliminate il torsolo e tagliatele in 4. Tagliate ogni quarto a metà, poi ogni metà a pezzetti né tanto grossi né tanto sottili. Sciogliete il burro in una padella capiente, versateci le mele, lo zucchero e la cannella. Cuocete per circa 10 minuti a fuoco medio, mescolando spesso. Lasciatele raffreddare.
+        Tagliate il panetto di pasta brisée in due parti: una leggermente più grande che stenderete con un mattarello. Ricoprite il fondo e i bordi di uno stampo imburrato. Aggiungete la farina di mandorle, poi versate le mele cotte. Stendete l’altro panetto e ritagliate una stella centrale e delle stelline più piccole tutto intorno. Ricoprite le mele, ritagliate la pasta in eccesso sui bordi e sigillate bene tutto intorno. Spennellate la superficie della torta di mele con il tuorlo.
+        Stendete la pasta rimanente e ritagliate tante stelline quante ve ne servono per decorare il bordo della torta. Spennellatele con il tuorlo e cospargete il tutto con lo zucchero semolato.
+        Infornate la torta di mele nel forno già caldo a 175 °C per 35 minuti circa. Lasciatela intiepidire prima di servire.
+    </p>
+    <br>
+    <hr>
+    <h2>Fonte</h2>
+    <h4><a href="https://www.ricettedellanonna.net/apple-pie/" target="_blank"
+        title="Premi tasto sinistro con il mouse">Clicca qui per visualizzare la fonte</a></h4>
+    <hr>
+    <h2>Contattaci!</h2>
+    <form action="api.example.com/contactus">
+        <input type="email" name="Indirizzo mail" id="email" placeholder="Email">
+        <br>
+        <input type="password" name="Password" id="password" placeholder="Password">
+        <br><br>
+        <label for="consenso">Acconsento al trattamento dei dati</label>
+        <input type="checkbox" name="Acconsento al trattamento dei dati" id="consenso">
+        <br><br>
+        <!-- Questo testo è lasciato volutamente senza elemento siccome un <p> richiderebbe uno style="margin-bottom:0" -->
+        Livello di gradimento
+        <br>
+        <label for="ottimo">Ottimo</label>
+        <input type="radio" name="gradimento" id="ottimo">
+        <label for="ottimo">Discreto</label>
+        <input type="radio" name="gradimento" id="discreto">
+        <label for="ottimo">Pessimo</label>
+        <input type="radio" name="gradimento" id="pessimo">
+        <br><br>
+        <input type="button" value="Invia">
+    </form>
+</body>
+</html>
