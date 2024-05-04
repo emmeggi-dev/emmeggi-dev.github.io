@@ -1,0 +1,11 @@
+#icons {
+    background-color: #ff8000;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 0 .5em;
+}
+
+#icons > i {
+    margin: 1em .5em;
+    display: inline-block;
+}
