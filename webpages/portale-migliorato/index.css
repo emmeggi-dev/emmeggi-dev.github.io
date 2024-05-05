@@ -1,81 +1,193 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Portale Migliorato</title>
-</head>
-<body>
-    <header>
-        <img src="logo.png" alt="logo">
-        <h1>Benvenuto!</h1>
-        <form action="ricerca">
-            <input type="text" name="testo-ricerca" id="testo-ricerca">
-            <input type="submit" value="Cerca">
-        </form>
-    </header>
-    <div id="sinistra" class="floattante">
-        <h2>Nav bar</h2>
-        <ul>
-            <li>Active</li>
-            <li>Item1</li>
-            <li>Item2</li>
-            <li>Item3</li>
-        </ul>
-    </div>
-    <div id="centro" class="floattante">
-        <div id="banner">
-            <h2>Banner</h2>
-        </div>
-        <div id="titles">
-            <div><h3>Titolo1</h3></div>
-            <div><h3>Titolo2</h3></div>
-            <div><h3>Titolo3</h3></div>
-        </div>
-        <div id="articles">
-            <div>
-                <h3>Schiacciata</h3>
-                <p>Eh? Capita? Non è una battuta, è una schiacciata!</p>
-            </div>
-            <div>
-                <h3>Curiosità sulle patate</h3>
-                <p>Le patate sono tante, milioni di milioni, ma quelle Ruggero vengono dalla famiglia delle patate.</p>
-            </div>
-        </div>
-    </div>
-    <div id="destra" class="floattante">
-        <h2>Side bar</h2>
-        <table id="calendario">
-            <tr>
-                <td colspan="7">marzo</td>
-            </tr>
-            <tr> <td>1</td> <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> <td>7</td> </tr>
-            <tr> <td>8</td> <td>9</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td> <td>14</tr> </tr>
-            <tr> <td>15</td> <td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td> <td>21</td>
-            </tr> <tr> <td>22</td> <td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td> <td>28</td> </tr>
-            <tr> <td>29</td> <td>30</td> <td>31</td> <td class="empty"></td> <td class="empty"> </td>
-                <td class="empty"></td> <td class="empty"></td> </tr>
-        </table>
-        <div class="menu">
-            <h3>Menu</h3>
-            <ul type="none">
-                <li>pizzocheri</li>
-                <li>lasagna della nonna</li>
-                <li>Gnocchi ai quattro formaggi</li>
-            </ul>
-        </div>
-    </div>
-    <footer>
-        <div class="contacts">
-            <p>Email: ansatsu@kyoushitsu.lol<br>
-             Numero: +39 02 77790308<br>
-             Indirizzo: 150 Freston road, London
-            </p>
-        </div>
-        <div class="link">
-            <a href="https://www.youtube.com/watch?v=QJLRRQEEHEo" target="_blank"><p>Collegamento</p></a>
-        </div>
-    </footer>
-</body>
-</html>
+:root {
+    --margin-size: 3px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+div.floattante {
+    float: left;
+    height: calc(80% - var(--margin-size) * 2);
+    margin: var(--margin-size);
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(153, 0, 255);
+    color: white;
+    position: relative;
+}
+
+header * {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header img {
+    height: 40%;
+    border-radius: 5pt;
+    left: 3%
+}
+
+header form {
+    right: 10%;
+    left: inherit;
+}
+
+header form input[type="text"] {
+    width: 150px;
+    left:-120px
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: rgba(130, 238, 229, 0.914);
+    clear: both;
+    position: relative;
+}
+
+footer * {
+    margin: 0 5%;
+    top: 50%;
+}
+
+footer .contacts {
+    
+    position: absolute;
+    left: -3em;
+    width: 40em;
+    text-align: left;
+    padding: 0;
+    transform: translate(0, -50%);
+}
+
+footer .link {
+    
+    position: absolute;
+    right: -1em;
+    transform: translate(0, -50%);
+}
+
+h1, h2, h4 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#sinistra {
+    background-color: rgb(128, 255, 0);
+    width: calc(20% - var(--margin-size) * 2);
+}
+
+#centro {
+    background-color: rgb(42, 44, 165);
+    width: calc(60% - var(--margin-size) * 2);
+}
+
+#destra {
+    background-color: rgb(128, 107, 0);
+    width: calc(20% - var(--margin-size) * 2);
+    position: relative;
+}
+
+#banner {
+    width: calc(100%-4px);
+    margin: 5px;
+    padding: 1em 0;
+
+    background-color: rgb(131, 127, 255);
+}
+
+#titles {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#titles div {
+    width: calc(100%/3 - 10px);
+    margin: 5px;
+    height: 4em;
+    float: left;
+    text-align: center;
+    background-color: violet;
+}
+
+#articles {
+    margin: 4px;
+    padding: 2px 10px;
+    clear: both;
+    background-color: rgba(30, 204, 210, 0.826);
+}
+
+#articles div {
+    background-color: rgba(128, 128, 128, 0.747);
+    margin: 4px 0;
+    padding: 2px 5px;
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+#articles h3 {
+    margin: 2px 0;
+    text-align: center;
+    color: white;
+}
+
+#articles p {
+    margin: 3px 5px;
+    color: white;
+}
+
+#destra table {
+    position: relative;
+    left: 50%;
+    top: 2em;
+    transform: translate(-50%, 0);
+    background-color:darkcyan;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#destra table td {
+    background-color: antiquewhite;
+    border-radius: 3px;
+    padding: 4px;
+    text-align: center;
+}
+
+td.empty {
+    visibility: hidden;
+}
+
+.menu {
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    top: 4em;
+    transform: translate(-50%, 0);
+    background-color: aquamarine;
+    text-align: center;
+    padding: 1px 10px;
+    border-radius: 3px;
+}
+
+.menu ul {
+    padding: 0;
+    text-align: left;
+}
+
+iframe {
+    width: 50%;
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%,0);
+}
