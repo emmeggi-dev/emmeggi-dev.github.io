@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Index</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: .25em;
+            font-size: 40pt;
+        }
+
+        #accordionExample {
+            width: 80%;
+            margin: 30pt 0 0 10%;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Andrea Martini</h1>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              3° Anno
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <a href="https://gruppo1civica.github.io/" target="_blank">Educazione civica</a>
+                <li><a href="webpages/ricetta/index.html" target="_blank">Ricetta</a></li>
+                <li><a href="webpages/galleria/index.html" target="_blank">Galleria</a></li>
+                <li><a href="webpages/primoCSS/index.html" target="_blank">Primo CSS</a></li>
+                <li><a href="webpages/voti/index.html" target="_blank">Voti</a></li>
+                <li><a href="webpages/box-formattati/index.html" target="_blank">Box formattati</a></li>
+                <li><a href="webpages/portale-prova/index.html" target="_blank">Portale prova</a></li>
+                <li><a href="webpages/portale-migliorato/index.html" target="_blank">Portale migliorato</a></li>
+                <li><a href="webpages/icone/index.html" target="_blank">Icone</a></li>
+                <li><a href="webpages/font-awesome/index.html" target="_blank">Font Awesome</a></li>
+                <li><a href="webpages/navbar/index.html" target="_blank">Navbar</a></li>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              4° Anno
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Coming soon</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              5° Anno
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Coming not-so-soon</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
