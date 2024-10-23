@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calcolatrice migliorata</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Calcolatrice migliorata</h1>
+        <div id="text-fields">
+            <p id="result">0</p>
+            <input type="text" id="number">
+        </div>
+        <div id="operands">
+            <button onclick="addition()">+</button>
+            <button onclick="subtraction()">-</button>
+            <button onclick="division()">/</button>
+            <button onclick="multiplication()">*</button>
+        </div>
+        <button id="confirm" onclick="compute()">=</button>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
