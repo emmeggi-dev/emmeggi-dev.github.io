@@ -1,0 +1,76 @@
+body {
+    background: rgb(2,0,36);
+background: linear-gradient(180deg, rgb(20, 20, 20) 0%, rgb(32, 32, 32) 35%, rgba(0,0,0,1) 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#main {
+    width: fit-content;
+    background-color: #333333;
+    padding: .5em 1.5em;
+    border-radius: 15px;
+    border: solid black 2px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    color: white;
+    background-color: #111111;
+    padding: .5em 1em;
+    border-radius: 10px;
+    text-align: right;
+}
+
+#button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: min-content;
+}
+
+#zero {
+    margin: 1.3em 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+button {
+    width: 2em;
+    cursor: pointer;
+    background-color: #222222;
+    color: white;
+    border-radius: 5px;
+    padding: .25em 0;
+    border: black solid 1px;
+}
+
+button:hover {
+    background-color: #444444;
+}
+
+button:active {
+    background-color: #555555;
+}
+
+#operazioni,#azioni {
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+}
+
+#operazioni > button, #azioni > button {
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+}
