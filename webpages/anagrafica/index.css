@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#values {
+    width: 12em;
+    padding: 1em;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+#values > * {
+    display: block;
+    margin: .5em auto;
+    border: 1px black solid;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+#values > input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#content {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    top: 35m;
+    transform: translate(-50%,0);
+    background-color:brown;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+table * {
+    padding: .25em;
+}
+
+table td, table th {
+    border: 1px solid black;
+}
+
+table tr:first-child th {
+    border-top: none;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr td:first-child, table tr th:first-child {
+    border-left: none;
+}
+
+table tr td:last-child, table tr th:last-child {
+    border-right: none;
+}
+
+h1 {
+    text-align: center;
+    margin: .5em;
+}
